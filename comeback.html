@@ -1,0 +1,211 @@
+
+<?php   
+
+session_start();
+$name = $_SESSION['name'];
+
+
+ ?>
+
+
+
+
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Practise</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!-- Place favicon.ico in the root directory -->
+    <!--Header Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <!--Main font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div id="holder">
+
+
+
+        <header>
+            
+            <div id="img_logo"><a href="index.html"><img src="img/BTS_Logo.png" alt="logo"></a></div>
+            <div id="search_container">
+                <input type="text" id="search_bar_performance" placeholder="Search" onchange="openPage()" >
+                <button id="search_btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+
+<h5>Hello <?php echo htmlspecialchars($name);?></h5>
+
+        </header>
+        <nav>
+            <div class="hamIcon" onClick="sideToggleClass()">
+                <p>&#9776;</p>
+            </div>
+            <ul class="sideMenu">
+                <li><a href="#"> Performances</a>
+                         <ul>
+                             <li><a href="comeback.html" id="link1">Comebacks</a></li>
+                             <li><a href="concert.html" id="link1">Concerts</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#"> Album Eras</a>
+                         <ul>
+                             <li><a href="SkoolEra.html">2013:Skool Era</a></li>
+                             <li><a href="DarkNWild.html">2014:Dark n' Wild</a></li>
+                             <li><a href="HYYH.html">2015-16:HYYH Era</a></li>
+                             <li><a href="Wings.html">2016-17:Wings</a></li>
+                             <li><a href="LY.html">2017-18:LY</a></li>
+                             <li><a href="MOTS.html">2019-20:MOTS</a></li>
+                             <li><a href="BE.html">2020: BE</a></li>
+                             <li><a href="butter.html">2021: Butter</a></li>
+                         </ul>
+                     </li>
+
+                <li><a href="#"> TV Shows</a>
+                    <ul>
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">DOCUMENTARIES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> BT21</a>
+                    <ul>
+                        <li><a href="">Store</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+
+
+
+        <main class="index">
+
+            <h1> Performances </h1>
+
+            <section class="performance">
+                <button class="listItem" id="btn0"><a href="2013.php">2013</a></button>
+                <button class="listItem" id="btn1"><a href="2014.php">2014</a></button>
+                <button class="listItem" id="btn2"><a href="2015.php">2015</a></button>
+                <button class="listItem" id="btn3"><a href="2016.php">2016</a></button>
+                <button class="listItem" id="btn4"><a href="2017.php">2017</a></button>
+                <button class="listItem" id="btn5"><a href="2018.php">2018</a></button>
+                <button class="listItem" id="btn6"><a href="2019.php">2019</a></button>
+                <button class="listItem" id="btn7"><a href="2020.php">2020</a></button>
+                <button class="listItem" id="btn8"><a href="2021.php">2021</a></button>
+            </section>
+
+<div class="performance_container">
+  <article>
+        <p class="texts"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+
+            <script >
+                var input = document.getElementById('search_bar_performance');
+
+                input.addEventListener('keyup', filter);
+
+                function filter(){
+                    var  filterValue = document.getElementById('search_bar_performance').value.toLowerCase();
+
+                    var ul = document.querySelector('.performance');
+                    var li = document.querySelectorAll('.listItem');
+
+                    for(i=0;i<li.length;i++){
+                        var a = li[i].getElementsByTagName('a')[0];
+                        if(a.innerHTML.toLowerCase().indexOf(filterValue)> -1){
+                            li[i].style.display = '';
+                        }else{
+                            li[i].style.display = 'none';
+                        }
+                    }
+                }
+            </script>
+
+        </main>
+
+        <footer> &copy;2020
+            <div class="footer">
+                <ul>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Help</a></li>
+                    <li><a href="#"> Legal</a></li>
+                </ul>
+            </div>
+            <div class="go-up"><a href=""> GO UP</a></div>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

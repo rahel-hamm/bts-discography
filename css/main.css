@@ -1,0 +1,1182 @@
+              /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+  * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+  */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222; 
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+
+  box-sizing: border-box;
+
+}
+body{
+  background-color: black;
+  color:#fff;
+  overflow-x: hidden;
+
+}
+#holder{
+
+
+display: flex;
+display:grid;
+min-height:100vh;
+padding-bottom: 4rem;
+margin:auto;
+box-shadow: 2px 5px 20px;
+width:100% ;
+position: relative;
+/*flex-direction: column;*/
+grid-template-columns:1fr 4fr;
+grid-template-rows: auto auto auto auto;
+background-color: #383739;
+}
+
+header {
+
+grid-row:1/2;
+grid-column:1/3;
+padding:2.5rem 0;
+text-align: center;
+border-bottom: 2px solid #ffff;
+/*background-image:url(../img/BTS_Logo.png);
+background-position: center;
+background-size:contain;
+background-repeat: no-repeat;*/
+}
+
+.header-main{
+  margin:0;
+  padding:0;
+}
+.header{
+position:absolute;
+
+width:100%;
+margin:0;
+padding:0;
+
+
+}
+
+
+
+.carousel-inner{
+  padding:0;
+  margin:0;
+  position:relative;
+  height: 490px;
+  }
+
+div #img_logo{
+width:200px;
+margin:auto;
+cursor: pointer;
+
+
+}
+
+nav{
+    margin:0;
+    text-align:center;
+    list-style: none;
+    grid-column:1/3;
+    grid-row:2/3;
+    z-index: 1;
+
+
+
+}
+
+
+/* Hamburger // Navigation*/
+
+.mainMenu ,.sideMenu{
+  grid-column: 1/2;
+    grid-row:2/3;
+list-style:  none;
+padding:0;
+margin: 0;
+position: relative;
+font-family: 'Dosis', sans-serif;
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+.hamIcon:hover ,.mainMenu:hover{
+  cursor: pointer;
+}
+ul {
+padding:0;
+  margin:0;
+  list-style: none;
+  color: white;
+  z-index: 1;
+ }
+
+ul li{
+  width:200px;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+
+
+
+
+}
+
+ul li a{
+border-radius: 0.2rem;
+  text-decoration: none;
+    color:white;
+}
+
+
+ul li a:hover {
+ padding:0.5rem;
+ text-shadow: #000 4px 3px 15px;
+color: white;
+text-decoration-line:none;
+}
+
+
+ul.mainMenu li ul li{
+  display: none;
+  background-color: rgba(255,255,255,0.95);
+  border-bottom: solid 2px  black;
+  border-radius: 2px;
+}
+
+ul.sideMenu li ul li{
+  display: none;
+  background-color: rgba(255,255,255,0.95);
+  border-bottom: solid 2px  black;
+  border-radius: 2px;
+
+}
+
+ul.sideMenu li ul li a{
+  color: black;
+}
+ul.mainMenu li ul li a{
+  color: black;
+}
+
+
+
+ul li:hover ul li{
+  display: block;
+
+}
+main.index h1{
+
+  padding: 0;
+  margin: 0.5rem;
+}
+
+
+/* =========================== */
+.performance_container{
+
+
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+height: auto;
+justify-content: space-between;
+
+}
+
+section.performance{
+  text-align: center;
+  width:100%;
+
+}
+iframe{
+  width:50%;
+}
+ul{
+  margin:0;
+  position: relative;
+}
+
+ul li{
+  width: 100%;
+ border-radius: 0.4rem;
+margin: 2px;
+
+
+}
+ul li ul li {
+background-color: lightgrey;
+
+margin:0;
+border-bottom :solid black 2px;
+border-radius: 0;
+}
+
+.performance >button{
+margin: 30px;
+padding: 10px;
+width: 200px;
+border-radius: 1.6rem;
+cursor: pointer;
+border:none;
+background-color: lightgrey;
+}
+
+ button a{
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  color:#000;
+ }
+
+#btn0:hover{
+  background-image: linear-gradient(to left,#2B292A,#9E7E34,#2B292A);
+
+}
+#btn1:hover{
+  background-image: linear-gradient(to left,#314B39,#F2B4C5,#314B39);
+
+}
+#btn2:hover{
+  background-image: linear-gradient(to left,#F8B092,#FDE2C3,#F8B092);
+
+}
+#btn3:hover{
+  background-image: linear-gradient(to left,#FBF6E2,#F7F8C1,#10264C,#057D8A,#4D902D,#C6C92A,#FDEC2B,#F7C11F,#FBF6E2);
+
+}
+#btn4:hover{
+  background-image: linear-gradient(to left,#43A191,#A6998B,#43A191);
+
+}
+#btn5:hover{
+  background-image: linear-gradient(to left,#F1A9C7,#CEB6DA,#A5C7EC);
+
+}
+#btn6:hover{
+  background-image: linear-gradient(to right,#F77599,#FFF8F9);
+
+}
+#btn7:hover{
+  background-image: linear-gradient(to left,#F79B26,#397ABD,#FFFFFF);
+
+}
+
+#btn8:hover{
+  background-image: linear-gradient(to left,#000,#fff,#000);
+
+}
+
+#time  {
+    font-size:40px;
+    font-family: 'Dosis', sans-serif;
+    float: right;
+    padding:5px;
+    margin:0;
+   }
+
+
+   #date{
+    font-size:40px;
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    padding:5px;
+    margin:0;
+   }
+
+
+main.index{
+   grid-column:1/4;
+grid-row: 3/4;
+margin:0.5rem;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+padding-top: 2rem;
+
+}
+
+ aside.aside-form{
+  position: absolute;
+  top:-15px;
+  right: 30px;
+ }
+
+.name-form ,.password-form{
+height:50px;
+position: relative;
+top: 5px;
+right: 30px;
+overflow:hidden;
+color:#000;
+margin:10px;
+display: inline-table;
+
+}
+
+input ,.name-form .password-form {
+  width:100%;
+  height:100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border:none;
+  outline:none;
+
+
+}
+label ,.name-form .password-form {
+  color:#000;
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  width:100%;
+  height: 100%;
+  margin:0;
+  pointer-events: none;
+  border-bottom: 3px solid black;
+
+}
+
+ .name-form label::after,
+ .password-form label::after /*::after adds additional styles to the label. ::after can only be used on tag that can contains content such as <p> or <label> or <header> but not <input>*/
+ {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width:100%;
+  border-bottom: 3px solid #595f6e;
+  left:0px;
+  bottom:-3px;
+  transform: translateX(-100%);
+  transition:  0.3s all ease;
+}
+
+#content-name{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  transition: all 0.3s ease;
+}
+
+ .name-form input:focus + #label-name  #content-name ,
+ .password-form input:focus + #label-name  #content-name ,/*whenever we click on the input we affect the label-name*/
+ .name-form input:valid + #label-name #content-name,
+ .password-form input:valid + #label-name #content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color:#5fa8d3;
+
+}
+
+ .name-form input:focus + #label-name::after ,
+ .password-form input:focus + #label-name::after ,
+ .name-form input:valid + #label-name::after,
+ .password-form input:valid + #label-name::after{
+  transform: translateX(0%);
+}
+
+.red-text{
+  color: red;
+  z-index: 1;
+  position: relative;
+  top: 60px;
+  left: 150px;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+
+}
+.form-btn{
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  width:40px;
+  height: 40px;
+  margin-left:5%;
+  border: none;
+  border-radius: 3px;
+  background: lightgrey;
+  /*background-image: linear-gradient( to left, #fff, darkgrey, #fff);*/
+
+}
+.form-btn:hover{
+  background: grey;
+
+}
+
+
+
+section.paragraph{
+
+  flex:2;
+  border-right: 2px solid #fff;
+}
+p.texts{
+  margin:0;
+  padding:0.4rem;
+  text-align: justify;
+}
+#imgLeft{
+  padding: 0.5rem;
+  float: left;
+  width: 50%;
+  /*shape-outside: url('img/bts-mots.jpg');*/
+}
+
+#imgRight{
+  float: right;
+  width: 30%;
+  padding: 0.5rem ;
+}
+img{
+  max-width: 100%;
+}
+
+img:hover{
+  transition-duration: 0.3s;
+  opacity: 0.8;
+  }
+
+/*h1{
+  margin: 0 0 15px 0;
+     color: grey;
+   font-size: 28px;
+   font-weight: 700;
+   font-family: 'Poppins',sans-serif;
+   /*text-transform: uppercase;
+   letter-spacing: 1.2px;
+   text-align: center;
+ padding-top: 25px;
+    height: 60px;}*/
+
+div {
+    display: flex;
+    flex-wrap:wrap;
+    margin:2.5px;
+    padding:0;
+  }
+
+   p,table{
+  margin:0;
+  text-align: center;
+  font-family: 'Hind Siliguri', sans-serif;
+  color:white;
+}
+
+table{
+width:700px;
+margin:auto;
+ }
+ th{
+  font-size: 1.5rem;
+}
+table,th, td{
+  border:1px solid #000;
+  text-align: center;
+  /*border-collapse: collapse;*/}
+
+/* ==== Footer ======*/
+
+div.footer ul li {
+  display: inline-block;
+
+  width:50px;
+
+}
+.footer ul li a{
+  margin:0;
+  padding:0;
+  width: 30px;
+}
+.footer a:hover{
+  border-left:solid 2px black;
+
+
+}
+
+
+footer{
+
+    grid-row:4/5;
+    grid-column:1/3;
+    bottom:0;
+    margin:0;
+    position:absolute;
+    height:0.5rem;
+   width: 100%;
+   border-top: 2px solid #ffff;
+   text-align: center;
+   color: #fff;
+}
+
+h1{
+  font-size: 2rem;
+}
+/*Media query*/
+
+
+
+
+
+
+
+
+@media /*screen smaller than 751px*/(max-width: 751px){
+  .index {
+    max-width:100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.9rem;
+
+  }
+
+  .container {
+flex-direction: column;
+
+  }
+.imgWrapper{
+
+  align-items: center;
+
+}
+
+  #carouselExampleIndicators{
+    display: none;
+  }
+
+  section.paragraph{
+    border: none;
+  }
+  .label-form{
+    display: none;
+  }
+
+  #imgLeft, #imgRight{
+    width: 100%;
+  }
+  p.texts{
+    line-height: 3rem;
+  }
+  
+}
+
+@media screen and /*screen bigger than 651px*/(min-width: 651px){
+  .hamIcon{
+    display: none;
+
+  }
+  #imageWrapper{
+    
+    flex-direction: column;
+    align-content: center;
+    margin:0 auto;
+
+  }
+  .wrapper{
+      text-align: center;
+  }
+
+}
+
+@media screen and /*screen smaller than 650px*/(max-width: 650px){
+
+ .mainMenu.toggleCls  {
+    display: block;
+
+  }
+  .sideMenu.sideToggleCls{
+    display: block;
+
+  }
+ .hamIcon{
+  display: contents;
+
+ }
+
+ .sideMenu ,.mainMenu{
+  display: none;
+
+
+ }
+
+ iframe{
+  width: 100%;
+ }
+
+
+}
+
+@media screen and (max-width: 480px){
+
+ #search_bar{
+  display:none ;
+
+ }
+ .container {
+display: flex;
+ }
+.wrapper{
+    text-align: center;
+}
+#imageWrapper{
+    flex-direction: column;
+    align-content: center;
+    margin:0 auto;
+    
+
+}
+
+
+#img{
+  align-self: center;
+ }
+
+
+}
+
+/*================ end of media query ==============*/
+
+
+main.index{
+display: block;
+
+}
+
+.form-btn{
+  height:40px;
+}
+
+
+
+
+
+/*GO UP*/
+.go-up a{
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Search Bar*/
+
+#search_container{
+padding:0;
+font-family: 'Hind Siliguri', sans-serif;
+margin: 3px;
+z-index: 2;
+}
+
+#search_bar{
+  border-radius: 0rem;
+  border:none;
+  width:250px;
+  margin:0;
+  padding:0;
+  text-align:left;
+  padding: 0.3rem;
+  /*font-weight: thin;*/
+
+
+}
+input #search_bar_performance{
+  border-radius: 0rem;
+  border:none;
+  width:250px;
+  margin:0;
+  padding:0;
+  text-align:left;
+  padding: 0.3rem;
+background-color: green;
+}
+
+#search_btn{
+  border-radius: 0rem;
+  border:none;
+  width:50px;
+  padding:0;
+  margin:0;
+
+}
+
+/* Videos/ Media*/
+iframe{
+  padding: 1.5rem;
+  margin:auto;
+  border-radius: 2rem;
+   opacity:0.8;
+
+}
+
+
+iframe:hover{
+  opacity: 1;
+}
+/* =========================================================================
+ Lyric Content */
+main.container{
+ padding: 20px ;
+ margin: 0;
+display: flex;
+justify-content: center;
+width: 100vw;
+
+
+
+}
+   .wrapper{
+
+    margin:0 auto;
+  padding:0;
+
+}
+
+
+/* ======== TEST 1========
+.moreText{
+  display: none;
+ }
+
+
+.text.show-more .moreText{
+  display: inline;
+}
+.text.show-more .dots{
+  display: none;
+}
+button.read-more-btn{
+  width:150px;
+}*/
+ #img{
+  width: 150px;
+  height: 150px;
+  float: left;
+  border-radius: 0.8rem;
+  margin:10px 20px;
+  }
+  .container {
+    display: flex;
+  
+     }
+
+  #imageWrapper{
+    border-bottom: solid black 2px;
+    max-width: 450px ;
+    padding:0;
+    align-content: center;
+    margin:0 auto;
+    
+    flex-wrap: wrap;
+    
+  }
+
+.wrapper{
+  
+  text-align: center;
+  
+  margin: 0;
+}
+
+  
+  
+
+
+h4{
+  font-size: 1.9rem;
+  margin: 3rem 0 3rem;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/*
+.Text, .moreText{
+display: none;
+text-align: center;
+width:50%;
+}
+ .toggleText{
+   display: inline;
+ }
+
+.Text{
+  display: none;
+}*/
+
+.toggle{
+  display: none;
+}
+.toggleHide{
+display: none;
+}
+
+.toggleShow{
+display: inline;
+}
+
+
+h4{
+  color: #fff;
+}
+/* ==========================================================================
+   Track List
+   ========================================================================== */
+
+.modal-body{
+  color: black;
+
+}
+
+.btn-btn-primary{
+  background-color: black;
+  border-radius: 0.2rem;
+  border: none;
+  margin: 1.5rem;
+  padding: 0.5rem;
+
+}
+
+/* ==========================================================================
+   Track List
+   ========================================================================== */
+
+   div.imgWrapper{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: block;
+  margin:0 auto;
+  padding:0;
+
+
+
+   }
+.imgItem > div{
+  width:350px;
+  height:220px;
+  margin:30px auto;
+
+
+}
+.imgItem{
+  margin: 30px;
+}
+ .imgItem > div > img{
+  border-radius:0.5rem;
+
+
+
+ }
+.imgItem > div:hover{
+width:352px;
+height:222px;
+transition: ease 0.2s ;
+}
+
+
+/* ==========================================================================
+   To do list
+   ========================================================================== */
+h2{
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+main#main{
+  width: 100vw;
+}
+.coming-soon{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+ .day,.hour,.minute,.seconds{
+font-size: 3rem;
+ }
+ /* ==========================================================================
+ 
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Slider IMG
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 ,0 ,0 ,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

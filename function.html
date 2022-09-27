@@ -1,0 +1,29 @@
+<?php   
+
+$errors = array('name' => '', 'password' => '');
+
+if(isset($_POST['submit'])){
+
+    if (empty($_POST['name'])) {
+        $errors['name'] = 'Name cannot be empty';
+    }else{
+        $name = $_POST['name'];
+        if(!preg_match('/^[a-zA-Z\s]+$/', $name)){
+            $errors['name']= 'Please use only spaces or letters';
+        }
+    }
+
+    if(empty($_POST['password'])){
+        $errors['password'] = 'Password cannot be empty';
+    }else{
+        $password = $_POST['password'];
+        if($password >= 6){
+            $errors['password']= 'Password cannot be more than 6 characters';
+        }
+    }
+
+}
+
+
+
+ ?>

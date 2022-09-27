@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Message</title>
+	<script type="text/javascript">
+		function form(){
+			var name = document.getElementById('name');
+			var password = document.getElementById('password');
+			
+
+		if(name.value == "" || password.value == ""){
+			alert('Please enter value');
+		}	
+		else{
+			
+		}
+
+		}
+	</script>
+	
+</head>
+<body>
+<h2>WELCOME!!</h2>
+
+
+
+<form onsubmit = "form()" action="index.php">
+	<label>Username <input type="text" name="username" id="username"></label>
+	<label>Password <input type="password" name="password" id="password"></label>
+	<button  type="submit" id="submitbtn">submit</button>
+</form>
+
+
+</body>
+</html>
