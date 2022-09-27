@@ -224,11 +224,11 @@ function openPage(){
 var searchBar= document.getElementById('search_bar').value;
 
  if (searchBar === "performance"){
- 	window.open("comeback.php", "_self");
+ 	window.open("comeback.html", "_self");
  }
 
  if (searchBar === "home"){
- 	window.open("index.php", "_self");
+ 	window.open("index.html", "_self");
  }
 }
 
