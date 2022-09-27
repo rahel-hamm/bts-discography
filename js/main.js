@@ -221,7 +221,7 @@ modalBg.classList.remove('bg-active');
 
 function openPage(){
 
-var searchBar= document.getElementById('search_bar').value;
+var searchBar= document.getElementById('search_bar ').value;
 
  if (searchBar === "performance"){
  	window.open("comeback.html", "_self");

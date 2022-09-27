@@ -776,11 +776,12 @@ z-index: 2;
   padding:0;
   text-align:left;
   padding: 0.3rem;
+  
   /*font-weight: thin;*/
 
 
 }
-input #search_bar_performance{
+ #search_bar_performance{
   border-radius: 0rem;
   border:none;
   width:250px;
@@ -788,7 +789,7 @@ input #search_bar_performance{
   padding:0;
   text-align:left;
   padding: 0.3rem;
-background-color: green;
+
 }
 
 #search_btn{
