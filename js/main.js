@@ -135,10 +135,12 @@ function toggle(){
 
 
 
-const text = document.querySelector('.textItem');
-const toggle = document.querySelector('.toggle');
 
 
+
+
+
+/*
 text.addEventListener('click', function(){
   if(toggle.style.display === 'none'){
       toggle.classList.toggle('.toggleShow');    
@@ -150,7 +152,7 @@ text.addEventListener('click', function(){
       
 
   }
-});
+});*/
   
 
 
