@@ -904,13 +904,15 @@ width:50%;
   display: none;
 }*/
 
-
+.toggleText{
+display: none;
+}
 .toggleHide{
 display: none;
 }
 
 .toggleShow{
-display: inline;
+display: block;
 }
 
 

@@ -133,12 +133,30 @@ function toggle(){
 }
 */
 
+const imageWrappers = document.querySelectorAll('.textItem')
+const texts = document.querySelectorAll('.toggle')
+
+for ( var i = 0; i<imageWrappers.length; i++){
+	imageWrappers[i].addEventListener('click', displayText)
+
+}
+
+function displayText() {
+	for (var targ = ;)
+}
 
 
+/*const imageWrappers = document.querySelectorAll('.textItem')
+const texts = document.querySelectorAll('.toggle')
+imageWrappers.forEach(imageWrapper => {
+	imageWrapper.addEventListener('click', clicked)
+})
 
-
-
-
+function clicked(){
+	texts.forEach(text => {
+		text.classList.toggle('toggleText')
+	})
+}*/
 
 /*
 text.addEventListener('click', function(){
