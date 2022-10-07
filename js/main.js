@@ -133,7 +133,7 @@ function toggle(){
 }
 */
 
-const imageWrappers = document.querySelectorAll('.textItem')
+/*const imageWrappers = document.querySelectorAll('.textItem')
 const texts = document.querySelectorAll('.toggle')
 
 for ( var i = 0; i<imageWrappers.length; i++){
@@ -142,9 +142,9 @@ for ( var i = 0; i<imageWrappers.length; i++){
 }
 
 function displayText() {
-	for (var targ = ;)
+	
 }
-
+*/
 
 /*const imageWrappers = document.querySelectorAll('.textItem')
 const texts = document.querySelectorAll('.toggle')
@@ -171,9 +171,16 @@ text.addEventListener('click', function(){
 
   }
 });*/
-  
+   function myFunction(divid){
+	   var x = document.getElementById(divid);
 
+	   if(x.style.display === "none"){
+		   x.style.display = "block";
+	   }else{
+		   x.style.display = "none";
+	   }
 
+   }
   
 
   

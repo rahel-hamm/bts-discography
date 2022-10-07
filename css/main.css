@@ -904,17 +904,17 @@ width:50%;
   display: none;
 }*/
 
-.toggleText{
-display: none;
+.button:hover{
+cursor:pointer;
+transition: all 1s ease-in;
 }
-.toggleHide{
-display: none;
-}
-
-.toggleShow{
-display: block;
+.generalclass{
+  display: none;
+  
 }
 
+
+   
 
 h4{
   color: #fff;

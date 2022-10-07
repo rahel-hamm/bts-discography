@@ -1,12 +1,5 @@
   
-<?php   
 
-session_start();
-$name = $_SESSION['name'];
-
-
-
- ?>
 
 <html>
 
@@ -22,6 +15,7 @@ $name = $_SESSION['name'];
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <!-- Place favicon.ico in the root directory -->
+     <link rel="icon" type="image/x-icon" href="BTS-Logo.jpeg">
      <!--Header Font-->
      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
      <!--Main font-->
@@ -52,7 +46,7 @@ $name = $_SESSION['name'];
                  <input type="text" id="search_bar" placeholder="Search" onchange="openPage()">
                  <button id="search_btn" ><i class="fa fa-search" aria-hidden="true"></i></button>
              </div>
-<h5>Hello <?php echo htmlspecialchars($name);?></h5>
+
              <!--=================== NAV =========================-->
 
              <nav>
